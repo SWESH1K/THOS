@@ -2,8 +2,7 @@ import {
   Calendar, 
   FileText, 
   Users, 
-  Heart,
-  CheckCircle
+  Heart
 } from "lucide-react";
 import React from "react";
 
