@@ -9,6 +9,7 @@ export function Header() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/admissions", label: "Admissions" },
+    { href: "/alumni", label: "Alumni" },
     { href: "#services", label: "Services" },
     { href: "#gallery", label: "Gallery" },
     { href: "#contact", label: "Contact" }
@@ -57,9 +58,11 @@ export function Header() {
               Admissions
             </Button>
           </Link>
-          <Button size="sm">
-            Donate
-          </Button>
+          <Link to="/donate">
+            <Button size="sm">
+              Donate
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
