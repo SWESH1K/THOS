@@ -8,6 +8,7 @@ export function Header() {
   const navigationLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
+    { href: "/admissions", label: "Admissions" },
     { href: "#services", label: "Services" },
     { href: "#gallery", label: "Gallery" },
     { href: "#contact", label: "Contact" }
@@ -51,9 +52,11 @@ export function Header() {
           })}
         </nav>
         <div className="flex items-center space-x-2">
-          <Button size="sm" variant="outline" className="hidden sm:inline-flex">
-            Admissions
-          </Button>
+          <Link to="/admissions">
+            <Button size="sm" variant="outline" className="hidden sm:inline-flex">
+              Admissions
+            </Button>
+          </Link>
           <Button size="sm">
             Donate
           </Button>
